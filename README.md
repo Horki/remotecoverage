@@ -28,7 +28,7 @@
 ### In API
 #### codeception.yml
 
-```
+```yml
 actor: Tester
 paths:
   tests: tests
@@ -52,7 +52,7 @@ include:
 
 ### In Codeception
 #### codeception.yml
-```
+```yml
 actor: Tester
 paths:
     tests: tests
@@ -74,7 +74,7 @@ coverage:
 ```
 
 #### tests/api.suite.yml
-```
+```yml
 class_name: ApiTester
 modules:
     enabled:
