@@ -1,0 +1,14 @@
+{
+  "require": {
+    "php": ">=5.6",
+    "slim/slim": "2.*",
+    "entomb/slim-json-api": "dev-master"
+  },
+  "require-dev": {
+    "codeception/codeception": "^2.2",
+    "codeception/c3": "2.*"
+  },
+  "scripts": {
+    "start": "php -S localhost:8888 -t public public/index.php"
+  }
+}
