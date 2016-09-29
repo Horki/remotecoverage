@@ -12,6 +12,7 @@ if (PHP_SAPI == 'cli-server') {
 }
 
 require __DIR__ . '/../vendor/autoload.php';
+# https://github.com/Codeception/c3#setup
 include __DIR__ . '/../c3.php';
 
 

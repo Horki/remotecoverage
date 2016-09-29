@@ -8,7 +8,9 @@
  * @author tiger
  */
 
-// $_SERVER['HTTP_X_CODECEPTION_CODECOVERAGE_DEBUG'] = 1;
+// as in https://github.com/Codeception/c3#debug
+$_SERVER['HTTP_X_CODECEPTION_CODECOVERAGE_DEBUG'] = 1;
+//$_SERVER['HTTP_X_CODECEPTION_CODECOVERAGE_DEBUG'] = 1;
 
 if (isset($_COOKIE['CODECEPTION_CODECOVERAGE'])) {
     $cookie = json_decode($_COOKIE['CODECEPTION_CODECOVERAGE'], true);
@@ -25,10 +27,12 @@ if (isset($_COOKIE['CODECEPTION_CODECOVERAGE'])) {
         }
     }
 }
-
+// to remove // as in https://github.com/Codeception/c3#debug
+/*
 if (!array_key_exists('HTTP_X_CODECEPTION_CODECOVERAGE', $_SERVER)) {
     return;
 }
+*/
 
 if (!function_exists('__c3_error')) {
     function __c3_error($message)

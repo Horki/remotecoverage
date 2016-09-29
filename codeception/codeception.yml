@@ -2,6 +2,7 @@ actor: Tester
 paths:
     tests: tests
     log: tests/_output
+    data: tests/_data
     support: tests/_support
     envs: tests/_envs
 settings:
@@ -11,9 +12,7 @@ settings:
 extensions:
     enabled:
         - Codeception\Extension\RunFailed
-# as in https://github.com/Codeception/c3
 coverage:
-  enabled: true
-  remote: true
-  include:
-    - src/*
+    # url of file which includes c3 router.
+    # As in http://codeception.com/docs/11-Codecoverage#Local-Server
+    c3_url: 'http://localhost:8888'
