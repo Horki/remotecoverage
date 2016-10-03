@@ -3,4 +3,4 @@
 
 vendor/bin/codecept build
 
-vendor/bin/codecept run api --coverage-html
+vendor/bin/codecept run api -vvv --coverage-html

@@ -4,79 +4,105 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f6e8c55d6633bc6c0f6533643a230f6c",
-    "content-hash": "30ad4481d0d3283a3c8d8c85f10fd260",
+    "hash": "5b3782246548c8959798662f88f996c3",
+    "content-hash": "9496bffd300ca3851f58982e92798f52",
     "packages": [
         {
-            "name": "entomb/slim-json-api",
-            "version": "dev-master",
+            "name": "container-interop/container-interop",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/entomb/slim-json-api.git",
-                "reference": "c11e001ab98e7df4dcb7b096fb1c9506d21c7e16"
+                "url": "https://github.com/container-interop/container-interop.git",
+                "reference": "fc08354828f8fd3245f77a66b9e23a6bca48297e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/entomb/slim-json-api/zipball/c11e001ab98e7df4dcb7b096fb1c9506d21c7e16",
-                "reference": "c11e001ab98e7df4dcb7b096fb1c9506d21c7e16",
+                "url": "https://api.github.com/repos/container-interop/container-interop/zipball/fc08354828f8fd3245f77a66b9e23a6bca48297e",
+                "reference": "fc08354828f8fd3245f77a66b9e23a6bca48297e",
                 "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
             },
             "type": "library",
             "autoload": {
-                "classmap": [
-                    "jsonAPI/"
+                "psr-4": {
+                    "Interop\\Container\\": "src/Interop/Container/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
+            "time": "2014-12-30 15:22:37"
+        },
+        {
+            "name": "nikic/fast-route",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nikic/FastRoute.git",
+                "reference": "8ea928195fa9b907f0d6e48312d323c1a13cc2af"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nikic/FastRoute/zipball/8ea928195fa9b907f0d6e48312d323c1a13cc2af",
+                "reference": "8ea928195fa9b907f0d6e48312d323c1a13cc2af",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FastRoute\\": "src/"
+                },
+                "files": [
+                    "src/functions.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "MIT"
+                "BSD-3-Clause"
             ],
             "authors": [
                 {
-                    "name": "Jonathan Tavares",
-                    "email": "the.entomb@gmail.com",
-                    "homepage": "https://github.com/entomb",
-                    "role": "Developer"
+                    "name": "Nikita Popov",
+                    "email": "nikic@php.net"
                 }
             ],
-            "description": "Slim extension to implement fast JSON API's",
-            "homepage": "https://github.com/entomb/slim-json-api",
+            "description": "Fast request router for PHP",
             "keywords": [
-                "api",
-                "json",
-                "middleware",
-                "slim",
-                "view"
+                "router",
+                "routing"
             ],
-            "time": "2016-06-13 18:16:16"
+            "time": "2016-06-12 19:08:51"
         },
         {
-            "name": "slim/slim",
-            "version": "2.6.2",
+            "name": "pimple/pimple",
+            "version": "v3.0.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/slimphp/Slim.git",
-                "reference": "20a02782f76830b67ae56a5c08eb1f563c351a37"
+                "url": "https://github.com/silexphp/Pimple.git",
+                "reference": "a30f7d6e57565a2e1a316e1baf2a483f788b258a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/slimphp/Slim/zipball/20a02782f76830b67ae56a5c08eb1f563c351a37",
-                "reference": "20a02782f76830b67ae56a5c08eb1f563c351a37",
+                "url": "https://api.github.com/repos/silexphp/Pimple/zipball/a30f7d6e57565a2e1a316e1baf2a483f788b258a",
+                "reference": "a30f7d6e57565a2e1a316e1baf2a483f788b258a",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
             },
-            "suggest": {
-                "ext-mcrypt": "Required for HTTP cookie encryption"
-            },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0.x-dev"
+                }
+            },
             "autoload": {
                 "psr-0": {
-                    "Slim": "."
+                    "Pimple": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -85,19 +111,137 @@
             ],
             "authors": [
                 {
-                    "name": "Josh Lockhart",
-                    "email": "info@joshlockhart.com",
-                    "homepage": "http://www.joshlockhart.com/"
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
                 }
             ],
-            "description": "Slim Framework, a PHP micro framework",
-            "homepage": "http://github.com/codeguy/Slim",
+            "description": "Pimple, a simple Dependency Injection Container",
+            "homepage": "http://pimple.sensiolabs.org",
             "keywords": [
-                "microframework",
-                "rest",
+                "container",
+                "dependency injection"
+            ],
+            "time": "2015-09-11 15:10:35"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "time": "2016-08-06 14:39:51"
+        },
+        {
+            "name": "slim/slim",
+            "version": "3.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/slimphp/Slim.git",
+                "reference": "184352bc1913d7ba552ab4131d62f4730ddb0893"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/slimphp/Slim/zipball/184352bc1913d7ba552ab4131d62f4730ddb0893",
+                "reference": "184352bc1913d7ba552ab4131d62f4730ddb0893",
+                "shasum": ""
+            },
+            "require": {
+                "container-interop/container-interop": "^1.1",
+                "nikic/fast-route": "^1.0",
+                "php": ">=5.5.0",
+                "pimple/pimple": "^3.0",
+                "psr/http-message": "^1.0"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0",
+                "squizlabs/php_codesniffer": "^2.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Slim\\": "Slim"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rob Allen",
+                    "email": "rob@akrabat.com",
+                    "homepage": "http://akrabat.com"
+                },
+                {
+                    "name": "Josh Lockhart",
+                    "email": "hello@joshlockhart.com",
+                    "homepage": "https://joshlockhart.com"
+                },
+                {
+                    "name": "Gabriel Manricks",
+                    "email": "gmanricks@me.com",
+                    "homepage": "http://gabrielmanricks.com"
+                },
+                {
+                    "name": "Andrew Smith",
+                    "email": "a.smith@silentworks.co.uk",
+                    "homepage": "http://silentworks.co.uk"
+                }
+            ],
+            "description": "Slim is a PHP micro framework that helps you quickly write simple yet powerful web applications and APIs",
+            "homepage": "http://slimframework.com",
+            "keywords": [
+                "api",
+                "framework",
+                "micro",
                 "router"
             ],
-            "time": "2015-03-08 18:41:17"
+            "time": "2016-07-26 15:12:13"
         }
     ],
     "packages-dev": [
@@ -670,16 +814,16 @@
         },
         {
             "name": "phpdocumentor/reflection-docblock",
-            "version": "3.1.0",
+            "version": "3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "9270140b940ff02e58ec577c237274e92cd40cdd"
+                "reference": "8331b5efe816ae05461b7ca1e721c01b46bafb3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/9270140b940ff02e58ec577c237274e92cd40cdd",
-                "reference": "9270140b940ff02e58ec577c237274e92cd40cdd",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/8331b5efe816ae05461b7ca1e721c01b46bafb3e",
+                "reference": "8331b5efe816ae05461b7ca1e721c01b46bafb3e",
                 "shasum": ""
             },
             "require": {
@@ -711,7 +855,7 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2016-06-10 09:48:41"
+            "time": "2016-09-30 07:12:33"
         },
         {
             "name": "phpdocumentor/type-resolver",
@@ -1068,16 +1212,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "5.5.5",
+            "version": "5.5.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "a57126dc681b08289fef6ac96a48e30656f84350"
+                "reference": "146e0fe0bb7f44d1cefade0c93e86fe0b206dd79"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/a57126dc681b08289fef6ac96a48e30656f84350",
-                "reference": "a57126dc681b08289fef6ac96a48e30656f84350",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/146e0fe0bb7f44d1cefade0c93e86fe0b206dd79",
+                "reference": "146e0fe0bb7f44d1cefade0c93e86fe0b206dd79",
                 "shasum": ""
             },
             "require": {
@@ -1147,20 +1291,20 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2016-09-21 14:40:13"
+            "time": "2016-10-03 07:48:45"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
-            "version": "3.2.7",
+            "version": "3.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit-mock-objects.git",
-                "reference": "546898a2c0c356ef2891b39dd7d07f5d82c8ed0a"
+                "reference": "7462c19bdb9814f6e6bdeb5cad3eb3ce72c6e0da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/546898a2c0c356ef2891b39dd7d07f5d82c8ed0a",
-                "reference": "546898a2c0c356ef2891b39dd7d07f5d82c8ed0a",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/7462c19bdb9814f6e6bdeb5cad3eb3ce72c6e0da",
+                "reference": "7462c19bdb9814f6e6bdeb5cad3eb3ce72c6e0da",
                 "shasum": ""
             },
             "require": {
@@ -1206,57 +1350,7 @@
                 "mock",
                 "xunit"
             ],
-            "time": "2016-09-06 16:07:45"
-        },
-        {
-            "name": "psr/http-message",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-fig/http-message.git",
-                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
-                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Psr\\Http\\Message\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
-                }
-            ],
-            "description": "Common interface for HTTP messages",
-            "homepage": "https://github.com/php-fig/http-message",
-            "keywords": [
-                "http",
-                "http-message",
-                "psr",
-                "psr-7",
-                "request",
-                "response"
-            ],
-            "time": "2016-08-06 14:39:51"
+            "time": "2016-09-27 03:17:40"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
@@ -2267,9 +2361,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "entomb/slim-json-api": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

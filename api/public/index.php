@@ -17,9 +17,7 @@ include __DIR__ . '/../c3.php';
 
 
 // Instantiate the app
-$app = new \Slim\Slim;
-$app->view(new \JsonApiView);
-$app->add(new \JsonApiMiddleware);
+$app = new \Slim\App;
 
 // Register routes
 require __DIR__ . '/../src/routes.php';

@@ -16,4 +16,5 @@ coverage:
     # url of file which includes c3 router.
     # As in http://codeception.com/docs/11-Codecoverage#Local-Server
     enabled: true
+    remote: true
     c3_url: 'http://localhost:8888'
